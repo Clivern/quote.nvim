@@ -7,7 +7,7 @@ local json = vim.fn.json_decode
 local M = {}
 
 ---@return string
-M.get_zen_quote()
+M.get_zen_quote = function()
   local response = curl.get('https://zenquotes.io/api/today')
 
   if response.status == 200 then

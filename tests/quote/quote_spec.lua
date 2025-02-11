@@ -2,7 +2,7 @@ local plugin = require("quote")
 
 describe("setup", function()
   it("works with default", function()
-    assert(plugin.get_quote() !=  "", "Test get_quote with default site")
+    assert(plugin.get_quote() ~=  "", "Test get_quote with default site")
   end)
 
   it("works with custom var", function()
