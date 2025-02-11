@@ -2,7 +2,6 @@
 local curl = require("plenary.curl")
 local json = vim.fn.json_decode
 
-
 local M = {}
 
 ---@return string
